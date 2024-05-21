@@ -63,6 +63,8 @@ pipeline:
                     tags:
                       - latest
                     dockerfile: pythondockerfile
+        delegateSelectors:
+          - docker-delegate
     - stage:
         name: Integration Test
         identifier: Integration_Test
